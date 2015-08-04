@@ -14,6 +14,10 @@
 		38AFDC6D1B707EBC0037AF89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38AFDC6C1B707EBC0037AF89 /* Images.xcassets */; };
 		38AFDC701B707EBC0037AF89 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AFDC6E1B707EBC0037AF89 /* LaunchScreen.xib */; };
 		38AFDC7C1B707EBC0037AF89 /* SocialMedia_integrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AFDC7B1B707EBC0037AF89 /* SocialMedia_integrationTests.m */; };
+		38AFDC861B707ED30037AF89 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38AFDC851B707ED30037AF89 /* Social.framework */; };
+		38AFDC8A1B70811D0037AF89 /* facebook-share.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38AFDC891B70811D0037AF89 /* facebook-share.jpg */; };
+		38AFDC8C1B708FFC0037AF89 /* Share.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38AFDC8B1B708FFC0037AF89 /* Share.jpg */; };
+		38AFDC8E1B709AE30037AF89 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 38AFDC8D1B709AE30037AF89 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		38AFDC751B707EBC0037AF89 /* SocialMedia_integrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialMedia_integrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38AFDC7A1B707EBC0037AF89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38AFDC7B1B707EBC0037AF89 /* SocialMedia_integrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialMedia_integrationTests.m; sourceTree = "<group>"; };
+		38AFDC851B707ED30037AF89 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		38AFDC891B70811D0037AF89 /* facebook-share.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "facebook-share.jpg"; path = "../../../../Desktop/facebook-share.jpg"; sourceTree = "<group>"; };
+		38AFDC8B1B708FFC0037AF89 /* Share.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Share.jpg; sourceTree = "<group>"; };
+		38AFDC8D1B709AE30037AF89 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38AFDC861B707ED30037AF89 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +72,9 @@
 		38AFDC531B707EBC0037AF89 = {
 			isa = PBXGroup;
 			children = (
+				38AFDC8D1B709AE30037AF89 /* .gitignore */,
 				38AFDC5E1B707EBC0037AF89 /* SocialMedia_integration */,
+				38AFDC871B707ED90037AF89 /* Frameworks */,
 				38AFDC781B707EBC0037AF89 /* SocialMedia_integrationTests */,
 				38AFDC5D1B707EBC0037AF89 /* Products */,
 			);
@@ -81,6 +92,7 @@
 		38AFDC5E1B707EBC0037AF89 /* SocialMedia_integration */ = {
 			isa = PBXGroup;
 			children = (
+				38AFDC881B7081110037AF89 /* Resources */,
 				38AFDC631B707EBC0037AF89 /* AppDelegate.h */,
 				38AFDC641B707EBC0037AF89 /* AppDelegate.m */,
 				38AFDC661B707EBC0037AF89 /* ViewController.h */,
@@ -117,6 +129,23 @@
 				38AFDC7A1B707EBC0037AF89 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38AFDC871B707ED90037AF89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38AFDC851B707ED30037AF89 /* Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38AFDC881B7081110037AF89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38AFDC8B1B708FFC0037AF89 /* Share.jpg */,
+				38AFDC891B70811D0037AF89 /* facebook-share.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +231,9 @@
 				38AFDC6B1B707EBC0037AF89 /* Main.storyboard in Resources */,
 				38AFDC701B707EBC0037AF89 /* LaunchScreen.xib in Resources */,
 				38AFDC6D1B707EBC0037AF89 /* Images.xcassets in Resources */,
+				38AFDC8A1B70811D0037AF89 /* facebook-share.jpg in Resources */,
+				38AFDC8E1B709AE30037AF89 /* .gitignore in Resources */,
+				38AFDC8C1B708FFC0037AF89 /* Share.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
